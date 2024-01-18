@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding:0; margin:0;}
+        ul,li{list-style: none;}
+        .inner1{
+            height:500px;
+        }
+        .inner2{
+                background-color: red;
+                /* 
+                1.sticky는 position static속성으로 있다가. 특정 높이에서 fixed로 바뀌는 특성
+                
+                1-1 top,bottom, left, right중에서 특정 위치에서 fiwed로 변경할 속성을 하나 지정
+                1-2부모태그에 overflow:hidden이 있으면 동작하지 않습니다.
+                1-3.1-1번 속성중 1개에 스크롤됬을때 fixed지정을 기록합니다.*/
+                position: sticky;
+                top:0px;
+        }
+        .inner2 ul li{
+            display: inline-block;
+        }
+        .inner2 ul li a{
+            display: block;
+        }
+        .inner3{
+            height:1500px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="inner1">
+        inner1
+    </div>
+    <div class="inner2">
+        <ul>
+            <li><a href="#">중단메뉴</a></li>
+            <li><a href="#">중단메뉴</a></li>
+            <li><a href="#">중단메뉴</a></li>
+            <li><a href="#">중단메뉴</a></li>
+        </ul>
+    </div>
+    <div class="inner3">
+        inner3
+    </div>
+</body>
+</html>

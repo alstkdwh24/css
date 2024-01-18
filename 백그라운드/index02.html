@@ -8,6 +8,10 @@
         #wrap{
             height: 500px;
             border:1px solid #777;
+            background-image: url(img/그냥그런그림.jpg);
+            background-repeat: no-repeat;
+            /*background-size: contain;/*무조건 이미지가 잘리지 않도록 하고, 나머지는 비움*/
+            background-size: cover;
         }
 
     </style>
@@ -17,6 +21,24 @@
 <body>
     <section id="wrap">
         ..........................................................
+    </section>
+    <style>
+        #wrap-mid{
+            height: 500px;
+            border: 1px solid #777;
+
+            background-image: url(img/그냥그런그림.jpg);
+            background-size: 100%;
+            background-attachment: fixed; /*스크롤과 상관없이 백그라운드 고정 과정*/
+        }
+
+    </style>
+
+    <section id="wrap-mid">
+
+    </section>
+    <section style="height: 1000px;">
+
     </section>
 </body>
 </html>
